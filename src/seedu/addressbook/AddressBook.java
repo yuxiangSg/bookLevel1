@@ -1135,14 +1135,14 @@ public class AddressBook {
      */
 
     /**
-     * Removes sign(p/, d/, etc) from parameter string
+     * Removes prefix(p/, d/, etc) from parameter string
      *
-     * @param s  Parameter as a string
-     * @param sign  Parameter sign to be removed
+     * @param fullstring  Parameter as a string
+     * @param prefix  Parameter prefix to be removed
      * @return  string without the sign
      */
-    private static String removePrefixSign(String s, String sign) {
-        return s.replace(sign, "");
+    private static String removePrefixSign(String fullstring, String prefix) {
+        return fullstring.replace(prefix, "");
     }
 
     /**
